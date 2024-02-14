@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!-- Talar om att dokuentet är ett HTML-dokument, svensk sida -->
+<html lang="sv">
+
+<!-- Sidans titel inklusive osynlig metadata -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/StyleSheet.CSS" rel="stylesheet">
+    <title>Om</title>
+</head>
+
+<!-- Dokumentets kropp, allt här visas -->
+
+<body>
+    <!-- En header med navigationslänkar (o-ordnad lista) till respektive webbsida och en logotyp. Klass-selektor som stylar aktiv länk. -->
+    <header>
+        <a href="index.html" title="Startsidan"><img src="images/logo.svg" alt="Logotyp"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Startsida</a>
+                </li>
+                <li>
+                    <a href="courses.html">Kurser</a>
+                </li>
+                <li>
+                    <a href="pictures.html">Fotoalbum</a>
+                </li>
+                <li>
+                    <a href="contact.html">Kontakt</a>
+                </li>
+                <li>
+                    <a class="active" href="about.html">Om</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="container3">
+
+        <!-- En artikel med huvudinnehåll. Innehåller huvudrubrik, sektion med underrubrik och paragrafer samt bild och bildtext. -->
+        <article>
+
+            <h1>Om mig</h1>
+            <!-- Sidinnehåll med bild, stylat med id-selektor flytande åt höger -->
+            <aside id="sidebar">
+                <img src="images/Lilo.jpg" alt="Hunden Lilo i camper van">
+                <p>Lilo i vår camper van</p>
+            </aside>
+
+            <section>
+                <h2>Hej!</h2>
+                <p>Mitt namn är Isa Westling och jag är 28 år gammal. Jag är född och uppvuxen i Sundsvall. Jag studerar
+                    just nu
+                    Webbutvecklingsprogrammet på Mittuniversitetet och tycker det är superspännande. Mitt intresse för
+                    webbutveckling kom till via mitt arbete som e-learningproducent, där jag jobbat en del med CSS i
+                    skapandet
+                    av digitala kurser.</p>
+                <p>Jag har sedan tidigare en kandidatexamen inom PR och kommunikation samt studerat ett påbyggnadsår
+                    inom
+                    journalistik för akademiker, och även läst en kurs i webbutveckling!</p>
+                <p>Förutom att lära mig mer inom webbutveckling tycker jag om att resa. Jag, min sambo och vår älskade
+                    vovve
+                    Lilo spenderar helst vår lediga tid med att leva vanlife i vår plåtis Mats. Vi älskar att resa runt
+                    i
+                    Norge
+                    och har även varit ute på äventyr i Europa.</p>
+            </section>
+
+        </article>
+
+    </main>
+
+    <!-- Sidfot med information om kurs, namn, datum samt e-postadress med mailto link. ID-selektor för absolut positionering -->
+    <footer id="absolute">
+        <p>DTO57G Webbutveckling 1 | Isa Westling | 2023-09-14 | <a
+                href="mailto:isawestling@hotmail.com">isawestling@hotmail.com</a></p>
+    </footer>
+</body>
+
+</html>

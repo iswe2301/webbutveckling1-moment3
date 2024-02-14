@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- Talar om att dokuentet är ett HTML-dokument, svensk sida -->
+<html lang="sv">
+
+<!-- Sidans titel inklusive osynlig metadata -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/StyleSheet.CSS" rel="stylesheet">
+    <title>Fotalbum</title>
+</head>
+
+<!-- Dokumentets kropp, allt här visas -->
+
+<body>
+    <!-- En header med navigationslänkar (o-ordnad lista) till respektive webbsida och en logotyp. Klass-selektor som stylar aktiv länk. -->
+    <header>
+        <a href="index.html" title="Startsidan"><img src="images/logo.svg" alt="Logotyp"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Startsida</a>
+                </li>
+                <li>
+                    <a href="courses.html">Kurser</a>
+                </li>
+                <li>
+                    <a class="active" href="pictures.html">Fotoalbum</a>
+                <li>
+                    <a href="contact.html">Kontakt</a>
+                </li>
+                <li>
+                    <a href="about.html">Om</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Undermeny med rubrik och länkar, styling styrs via id-selektor. Klass-selektor stylar aktiv länk. -->
+    <div id="submenu">
+        <!-- Rubrik för undermeny -->
+        <h2 id="subheading">Fotoalbum</h2>
+        <ul>
+            <li>
+                <a href="pictures.html">Katter</a>
+            </li>
+            <li>
+                <a href="pictures2.html">Hundar</a>
+            </li>
+            <li>
+                <a class="active" href="pictures3.html">Fiskar</a>
+            </li>
+        </ul>
+    </div>
+
+    <main id="container4">
+        <!-- Sektion med huvudinnehåll där huvudrubrik och bilder ligger. ID-selektor för styling av sektionens storlek m.m. Klass-selektor för styling av bildernas storlek -->
+        <section>
+            <h1>Akvariefiskar</h1>
+            <img class="imgsize" src="https://villalivet.se/wp-content/uploads/2019/04/AdobeStock_178237221-scaled.jpeg"
+                alt="Akvariefiskar">
+            <br>
+            <img class="imgsize"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Macropodus_opercularis_-_front_%28aka%29.jpg/1200px-Macropodus_opercularis_-_front_%28aka%29.jpg"
+                alt="Akvariefisk">
+        </section>
+    </main>
+
+    <!-- Sidfot med information om kurs, namn, datum samt e-postadress med mailto link. ID-selektor för absolut positionering -->
+    <footer id="absolute">
+        <p>DTO57G Webbutveckling 1 | Isa Westling | 2023-09-14 | <a
+                href=" mailto:isawestling@hotmail.com">isawestling@hotmail.com</a></p>
+    </footer>
+</body>
+
+</html>

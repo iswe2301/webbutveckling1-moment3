@@ -1,0 +1,125 @@
+<!DOCTYPE html> <!-- Talar om att dokuentet är ett HTML-dokument, svensk sida -->
+<html lang="sv">
+
+<!-- Sidans titel inklusive osynlig metadata -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/StyleSheet.CSS" rel="stylesheet">
+    <title>Kontakt</title>
+</head>
+
+<!-- Dokumentets kropp, allt här visas -->
+
+<body>
+    <!-- En header med navigationslänkar (o-ordnad lista) till respektive webbsida och en logotyp. Klass-selektor som stylar aktiv länk. -->
+    <header>
+        <a href="index.html" title="Startsidan"><img src="images/logo.svg" alt="Logotyp"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Startsida</a>
+                </li>
+                <li>
+                    <a href="courses.html">Kurser</a>
+                </li>
+                <li>
+                    <a href="pictures.html">Fotoalbum</a>
+                </li>
+                <li>
+                    <a class="active" href="contact.html">Kontakt</a>
+                </li>
+                <li>
+                    <a href="about.html">Om</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="container2">
+        <!-- Sektion med huvudinnehåll där rubrik, paragraf och kontaktformulär ligger. Stylas med id-selektor för storlek m.m. -->
+        <section>
+            <h1>Kontakta mig</h1>
+            <p>Kontakta mig via <a href="mailto:isawestling@hotmail.com">e-post</a> eller med nedanstående
+                kontaktformulär.
+            </p>
+
+            <!-- Formulär -->
+            <form>
+
+                <!-- Grupperar ihop element i formuläret -->
+                <fieldset>
+
+                    <!-- Rubriken för gruppen av element, radbryt -->
+                    <legend>Kontaktformulär: </legend><br>
+                    <!-- Rubrik för namn, obligatorisk att svara på, text-input med placeholder. -->
+                    <label for="name">Namn: </label>
+                    <input id="name" name="name" placeholder="Förnamn Efternamn" required="" type="text"><br><br>
+                    <!-- Rubrik för epost, obligatorisk att svara på, text-input med placeholder. -->
+                    <label for="email">E-postadress: </label><input id="email" name="email" placeholder="namn@domän.se"
+                        required="" type="email"><br><br>
+
+                    <!-- Rubrik för yrke, text-input med placeholder. -->
+                    <label for="work">Yrke: </label>
+                    <!-- Rullist med alternativ -->
+                    <select id="work" name="work">
+                        <!-- Alternativ att välja i rullisten -->
+                        <option value="developer">
+                            Webbutvecklare
+                        </option>
+                        <!-- Alternativ att välja i rullisten -->
+                        <option value="designer">
+                            Webbdesigner
+                        </option>
+                        <!-- Alternativ att välja i rullisten -->
+                        <option value="project">
+                            Projektledare
+                        </option>
+                        <!-- Alternativ att välja i rullisten -->
+                        <option value="test">
+                            Testare
+                        </option>
+                        <!-- Alternativ att välja i rullisten -->
+                        <option value="other">
+                            Annat
+                        </option>
+                    </select><br><br>
+
+                    <!-- Rubrik för nyhetsbrev -->
+                    <label for="news">Nyhetsbrev: </label>
+                    <!-- Checkbox som kan kryssas i -->
+                    <input id="news" name="news" type="checkbox" value="news">
+                    <br><br>
+
+                    <!-- Rubrik för anställd -->
+                    <label>Anställd: </label>
+                    <!-- Radioknapp med svaret Ja -->
+                    <input id="yes" name="employee" type="radio" value="yes">
+                    <label for="yes">Ja</label>
+                    <!-- Radioknapp med svaret Nej -->
+                    <input id="no" name="employee" type="radio" value="no">
+                    <label for="no">Nej</label><br><br>
+
+                    <!-- Rubrik för meddelande -->
+                    <label for="message">Meddelande: </label><br>
+                    <!-- Textinmatning för frisvar, 30 kolumner och 6 rader -->
+                    <textarea cols="50" id="message" name="message" rows="6"></textarea><br>
+                    <!-- Knapp för skicka och nollställ -->
+                    <input type="submit" value="Skicka"> <input type="reset" value="Nollställ">
+
+                </fieldset>
+
+            </form>
+
+        </section>
+    </main>
+
+    <!-- Sidfot med information om kurs, namn, datum samt e-postadress med mailto link. ID-selektor för absolut positionering -->
+    <footer id="absolute">
+        <p>DTO57G Webbutveckling 1 | Isa Westling | 2023-09-14 | <a
+                href="mailto:isawestling@hotmail.com">isawestling@hotmail.com</a></p>
+    </footer>
+</body>
+
+</html>

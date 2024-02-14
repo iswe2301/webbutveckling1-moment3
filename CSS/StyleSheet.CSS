@@ -1,0 +1,290 @@
+/* Importerat google-font, Poppins. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Styling för sidans kropp som bestämmer typsnitt, textstorlek, radavstånd,
+luft utanför kroppen samt fixerad, heltäckande centrerad bakgrund */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+    background-image: url("../images/background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Styling huvudsektion för Startsidan */
+#container {
+    padding: 20px;
+    width: 80%;
+    min-width: 950px;
+    height: 820px;
+    margin-top: 200px;
+    margin-left: 10%;
+    background-color: #fcf5d9;
+}
+
+/* Styling huvudsektion för Kontakt-sidan.*/
+#container2 {
+    width: 50%;
+    min-width: 420px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    margin-top: 180px;
+    padding: 20px;
+    background-color: #fcf5d9;
+}
+
+/* Styling huvudsektion för Om-sidan & Kurser.*/
+#container3 {
+    width: 80%;
+    height: auto;
+    min-width: 650px;
+    min-height: 420px;
+    position: relative;
+    margin: auto;
+    margin-top: 250px;
+    background-color: #fcf5d9;
+    padding: 20px;
+}
+
+/* Styling huvudsektion för Fotoalbum-sidan.*/
+#container4 {
+    width: 500px;
+    height: auto;
+    margin-top: 160px;
+    margin-left: 30%;
+}
+
+/* Styling för header, fixerad position, full bred och egen bakgrundsfärg */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #b7daf6;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Storlek för logotyp i header med marginaler */
+header img {
+    width: 15%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* Styling för specifik undermeny till fotoalbum */
+#submenu {
+    width: 20%;
+    background-color: #b7daf6;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-right: 1px solid black;
+    z-index: 0;
+}
+
+/* Styling för rubrik i undermeny, centrerad text + marginal till topp */
+#subheading {
+    margin-top: 150px;
+    text-align: center;
+}
+
+/* Styling för listor i undermeny. Tar bort listprickar + padding, centrerar innehåll */
+#submenu ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+/* Styling för länkar i undermeny */
+#submenu a:link,
+a:visited {
+    background-color: #b7daf6;
+    color: black;
+    padding: 15px 20px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    width: 60%;
+    margin: 5px;
+    border: 1px;
+    border-radius: 8px;
+}
+
+/* Styling för hover till länkar i undermeny, bakgrundsfärg + skugga */
+#submenu li a:hover {
+    background-color: #aacde9;
+    text-shadow: 1px 1px grey;
+}
+
+/* Styling för luft + ram under meny/navigation */
+nav {
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+
+/* Styling för listor i meny/navigation. Bestämmer bakgrundsfärg och luft, tar bort listprickar. */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b7daf6;
+}
+
+/* Styling för listor i meny/navigation. Flyter åt vänster, svart linje mellan varje länkrubrik. */
+nav li {
+    float: left;
+    border-right: 1px solid black;
+}
+
+/* Styling för länkar i meny/navigation som används på samtliga sidor. Bestämmer luft, textfärg, ingen underline under länktexten */
+nav li a {
+    display: block;
+    padding: 10px 20px 10px 20px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Stydling för hover av länkar i meny/navigation. Bestämmer färg på bakgrunden & skugga på text. */
+nav li a:hover {
+    background-color: #aacde9;
+    text-shadow: 1px 1px grey;
+}
+
+/* Klass som bakgrundsfärgen på den länk/sida man är inne på som är "aktiv". */
+.active {
+    background-color: #9ec1dd !important;
+}
+
+/* Styling för rubrik nivå 1 - storlek, typsnitt, textfärg. */
+h1 {
+    font-size: 30px;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: black;
+}
+
+/* Styling för rubrik nivå 2 - storlek, typsnitt, textfärg. */
+h2 {
+    font-size: 22px;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #000e2a;
+}
+
+/* Styling för block-klass åt flytande textblock. Tar upp 1/3 av ytan. Centrerad text, mindre text-storlek. */
+.block {
+    padding: 10px 20px 10px 20px;
+    width: 33.3%;
+    float: right;
+    box-sizing: border-box;
+    margin: 20px 0;
+    height: auto;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Styling för bildstorlek */
+.imgsize {
+    width: 100%;
+    height: auto;
+}
+
+/* Styling för border i formulär */
+fieldset,
+input,
+select,
+textarea {
+    border: 2px solid #9EC1DD;
+}
+
+/* Styling för tabell */
+table {
+    border: 2px solid #9EC1DD;
+    width: 48%;
+    text-align: center;
+    margin: 0 5px;
+}
+
+/* Styling för tabellhuvud, tabellrder och tabelldata */
+thead,
+th,
+tr,
+td {
+    border: 2px solid #9EC1DD;
+    background-color: #FFFFF3;
+}
+
+/* Styling för datum, mindre textstorlek */
+#date {
+    font-size: 12px;
+}
+
+/* Styling för källor. Mindre textstorlek, flyter åt höger och rensar båda sidor */
+#source {
+    font-size: 12px;
+    float: right;
+    clear: both;
+    padding-right: 20px;
+}
+
+/* Styling för sidoinnehåll. Flyter åt höger, kursiv text och mindre textstorlek. */
+#sidebar {
+    float: right;
+    margin: 0 15px;
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+}
+
+/* ID-styling, flytande åt höger */
+#float {
+    float: right;
+}
+
+/* Styling för obesökt länk (i kompination med id source, ej i nav). Blå färg på länken */
+#source a:link {
+    color: blue;
+}
+
+/* Styling för besökt länk (i kompination med id source, ej i nav). Grå färg på länken */
+#source a:visited {
+    color: gray;
+}
+
+/* Styling för när musen rörs över en länk (i kompination med id source, ej i nav). Mörkblå färg på länken */
+#source a:hover {
+    color: darkblue;
+}
+
+/* Styling för när länk väljs/klickas (i kompination med id source, ej i nav). Orange färg på länken */
+#source a:active {
+    color: orange;
+}
+
+/* Styling för absolut positionering */
+#absolute {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Styling för sidfot, clear för att åka nedanför flytande element */
+footer {
+    border-top: solid black 1px;
+    text-align: center;
+    background-color: #b7daf6;
+    color: black;
+    clear: both;
+    font-size: 12px;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+}

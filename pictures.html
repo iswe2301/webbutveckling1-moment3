@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- Talar om att dokuentet är ett HTML-dokument, svensk sida -->
+<html lang="sv">
+
+<!-- Sidans titel inklusive osynlig metadata -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/StyleSheet.CSS" rel="stylesheet">
+    <title>Fotoalbum</title>
+</head>
+
+<!-- Dokumentets kropp, allt här visas -->
+
+<body>
+    <!-- En header med navigationslänkar (o-ordnad lista) till respektive webbsida och en logotyp. Klass-selektor som stylar aktiv länk. -->
+    <header>
+        <a href="index.html" title="Startsidan"><img src="images/logo.svg" alt="Logotyp"></a>
+        <nav id="mainmenu">
+            <ul>
+                <li>
+                    <a href="index.html">Startsida</a>
+                </li>
+                <li>
+                    <a href="courses.html">Kurser</a>
+                </li>
+                <li>
+                    <a class="active" href="pictures.html">Fotoalbum</a>
+                </li>
+                <li>
+                    <a href="contact.html">Kontakt</a>
+                </li>
+                <li>
+                    <a href="about.html">Om</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Undermeny med rubrik och länkar, styling styrs via id-selektor. Klass-selektor stylar aktiv länk. -->
+    <div id="submenu">
+        <!-- Rubrik för undermeny -->
+        <h2 id="subheading">Fotoalbum</h2>
+        <ul>
+            <li>
+                <a class="active" href="pictures.html">Katter</a>
+            </li>
+            <li>
+                <a href="pictures2.html">Hundar</a>
+            </li>
+            <li>
+                <a href="pictures3.html">Fiskar</a>
+            </li>
+        </ul>
+    </div>
+    <main id="container4">
+        <!-- Sektion med huvudinnehåll där huvudrubrik och bilder ligger. ID-selektor för styling av sektionens storlek m.m. Klass-selektor för styling av bildernas storlek -->
+        <section>
+            <h1>Katter</h1>
+            <img class="imgsize"
+                src="https://images.ctfassets.net/bi9pvs2ayg6b/5L1cADo5pYsOuA0IosAwOg/9de605b798fd4b1c53fd2d71573da0ad/Kopa_katt.jpg?w=640&h=360&fit=fill&fm=jpg"
+                alt="Kattunge">
+            <br>
+            <img class="imgsize" src="https://factum-info.net/images/2_Zabluzhdeniya/3_Animals/38_2_cats-1.jpg"
+                alt="Katt">
+        </section>
+    </main>
+
+    <!-- Sidfot med information om kurs, namn, datum samt e-postadress med mailto link. ID-selektor för absolut positionering -->
+    <footer id="absolute">
+        <p>DTO57G Webbutveckling 1 | Isa Westling | 2023-09-14 | <a
+                href="mailto:isawestling@hotmail.com">isawestling@hotmail.com</a></p>
+    </footer>
+</body>
+
+</html>
